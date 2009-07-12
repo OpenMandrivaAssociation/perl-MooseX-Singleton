@@ -1,5 +1,5 @@
 %define upstream_name    MooseX-Singleton
-%define upstream_version 0.18
+%define upstream_version 0.19
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -48,7 +48,7 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc ChangeLog README
+%doc ChangeLog
 %{_mandir}/man3/*
 %perl_vendorlib/*
 
