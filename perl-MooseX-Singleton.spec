@@ -1,5 +1,5 @@
 %define upstream_name    MooseX-Singleton
-%define upstream_version 0.19
+%define upstream_version 0.21
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
