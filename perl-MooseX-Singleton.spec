@@ -13,6 +13,8 @@ Source0:    http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upst
 
 BuildRequires: perl(Moose)
 BuildRequires: perl(Test::Exception)
+BuildRequires: perl(Test::Requires)
+
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -37,7 +39,7 @@ to get a handle on the singleton. It's actually just an alias for 'new'.
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %buildroot
@@ -48,7 +50,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc ChangeLog
+%doc ChangeLog META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
